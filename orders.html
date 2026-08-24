@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders | SmallBiz</title>
+    <link rel="stylesheet" href="Untitled-3.css">
+</head>
+
+<body>
+
+<div class="orders-app">
+
+    <!-- SIDEBAR -->
+    <aside class="orders-sidebar">
+
+        <div class="orders-brand">
+            <div class="orders-logo">SB</div>
+            <div>
+                <h2>SmallBiz</h2>
+                <p>AI Manager</p>
+            </div>
+        </div>
+
+        <div class="orders-business">
+            <div class="orders-business-icon">▣</div>
+
+            <div>
+                <strong>My Business</strong>
+                <span>Retail Store</span>
+            </div>
+
+            <b>⌄</b>
+        </div>
+
+        <nav class="orders-nav">
+
+            <span class="orders-nav-title">OVERVIEW</span>
+
+            <a href="index.html">
+                <span>⌂</span> Dashboard
+            </a>
+
+            <a href="ai-manager.html">
+                <span>✦</span> AI Manager
+                <small>NEW</small>
+            </a>
+
+            <span class="orders-nav-title">BUSINESS</span>
+
+            <a href="sales.html">
+                <span>↗</span> Sales
+            </a>
+
+            <a href="orders.html" class="orders-active">
+                <span>▣</span> Orders
+            </a>
+
+            <a href="#">
+                <span>◇</span> Inventory
+            </a>
+
+            <a href="#">
+                <span>♙</span> Customers
+            </a>
+
+            <a href="#">
+                <span>₹</span> Expenses
+            </a>
+
+            <span class="orders-nav-title">GROWTH</span>
+
+            <a href="#">
+                <span>⌁</span> Marketing
+            </a>
+
+            <a href="#">
+                <span>▥</span> Reports
+            </a>
+
+        </nav>
+
+        <div class="orders-sidebar-bottom">
+
+            <a href="#">
+                <span>⚙</span> Settings
+            </a>
+
+            <div class="orders-profile">
+                <div>V</div>
+
+                <section>
+                    <strong>Vikas</strong>
+                    <span>Owner</span>
+                </section>
+
+                <b>⌄</b>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="orders-main">
+
+        <header class="orders-header">
+
+            <div>
+                <h1>Orders</h1>
+                <p>Manage and track your customer orders.</p>
+            </div>
+
+            <div class="orders-header-right">
+
+                <div class="orders-search">
+                    ⌕
+                    <input type="text" placeholder="Search orders...">
+                </div>
+
+                <button>♧</button>
+
+                <div class="orders-avatar">V</div>
+
+            </div>
+
+        </header>
+
+
+        <div class="orders-content">
+
+            <!-- TITLE -->
+
+            <section class="orders-title">
+
+                <div>
+                    <span>ORDER MANAGEMENT</span>
+
+                    <h2>All orders</h2>
+
+                    <p>
+                        Keep track of recent orders and their status.
+                    </p>
+                </div>
+
+                <button class="new-order">
+                    + New order
+                </button>
+
+            </section>
+
+
+            <!-- STATS -->
+
+            <section class="orders-stats">
+
+                <article>
+                    <span>Total orders</span>
+                    <strong>126</strong>
+                    <small>↑ 14 this month</small>
+                </article>
+
+                <article>
+                    <span>Pending</span>
+                    <strong>12</strong>
+                    <small class="orange">Needs attention</small>
+                </article>
+
+                <article>
+                    <span>Processing</span>
+                    <strong>18</strong>
+                    <small>Being prepared</small>
+                </article>
+
+                <article>
+                    <span>Completed</span>
+                    <strong>96</strong>
+                    <small class="green">76% of orders</small>
+                </article>
+
+            </section>
+
+
+            <!-- ORDER LIST -->
+
+            <section class="orders-card">
+
+                <div class="orders-card-head">
+
+                    <div>
+                        <span>RECENT ORDERS</span>
+                        <h3>Order history</h3>
+                    </div>
+
+                    <div class="orders-filters">
+
+                        <button class="filter-active">
+                            All
+                        </button>
+
+                        <button>
+                            Pending
+                        </button>
+
+                        <button>
+                            Processing
+                        </button>
+
+                        <button>
+                            Completed
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="order-table">
+
+                    <div class="order-table-head">
+                        <span>ORDER</span>
+                        <span>CUSTOMER</span>
+                        <span>DATE</span>
+                        <span>AMOUNT</span>
+                        <span>STATUS</span>
+                        <span></span>
+                    </div>
+
+
+                    <div class="order-row">
+
+                        <strong>#SB-1048</strong>
+
+                        <div class="customer">
+                            <b>RS</b>
+                            <span>Rahul Sharma</span>
+                        </div>
+
+                        <span>24 Aug 2026</span>
+
+                        <strong>₹4,850</strong>
+
+                        <em class="status completed">
+                            Completed
+                        </em>
+
+                        <button>•••</button>
+
+                    </div>
+
+
+                    <div class="order-row">
+
+                        <strong>#SB-1047</strong>
+
+                        <div class="customer">
+                            <b>AK</b>
+                            <span>Ankit Kumar</span>
+                        </div>
+
+                        <span>24 Aug 2026</span>
+
+                        <strong>₹2,490</strong>
+
+                        <em class="status processing">
+                            Processing
+                        </em>
+
+                        <button>•••</button>
+
+                    </div>
+
+
+                    <div class="order-row">
+
+                        <strong>#SB-1046</strong>
+
+                        <div class="customer">
+                            <b>PM</b>
+                            <span>Priya Mehta</span>
+                        </div>
+
+                        <span>23 Aug 2026</span>
+
+                        <strong>₹6,200</strong>
+
+                        <em class="status pending">
+                            Pending
+                        </em>
+
+                        <button>•••</button>
+
+                    </div>
+
+
+                    <div class="order-row">
+
+                        <strong>#SB-1045</strong>
+
+                        <div class="customer">
+                            <b>VK</b>
+                            <span>Vivek Kumar</span>
+                        </div>
+
+                        <span>23 Aug 2026</span>
+
+                        <strong>₹1,850</strong>
+
+                        <em class="status completed">
+                            Completed
+                        </em>
+
+                        <button>•••</button>
+
+                    </div>
+
+
+                    <div class="order-row">
+
+                        <strong>#SB-1044</strong>
+
+                        <div class="customer">
+                            <b>SN</b>
+                            <span>Shreya Nair</span>
+                        </div>
+
+                        <span>22 Aug 2026</span>
+
+                        <strong>₹3,740</strong>
+
+                        <em class="status completed">
+                            Completed
+                        </em>
+
+                        <button>•••</button>
+
+                    </div>
+
+
+                    <div class="order-row">
+
+                        <strong>#SB-1043</strong>
+
+                        <div class="customer">
+                            <b>AM</b>
+                            <span>Arjun Malhotra</span>
+                        </div>
+
+                        <span>22 Aug 2026</span>
+
+                        <strong>₹5,120</strong>
+
+                        <em class="status processing">
+                            Processing
+                        </em>
+
+                        <button>•••</button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="orders-pagination">
+
+                    <span>
+                        Showing 1–6 of 126 orders
+                    </span>
+
+                    <div>
+                        <button>‹</button>
+                        <button class="page-active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>…</button>
+                        <button>21</button>
+                        <button>›</button>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- AI ORDER INSIGHT -->
+
+            <section class="order-ai">
+
+                <div class="order-ai-icon">
+                    ✦
+                </div>
+
+                <div>
+                    <span>AI MANAGER</span>
+
+                    <h3>
+                        12 orders need attention
+                    </h3>
+
+                    <p>
+                        I found 12 pending orders. 4 have been
+                        waiting for more than 24 hours.
+                    </p>
+                </div>
+
+                <a href="ai-manager.html">
+                    Ask AI Manager →
+                </a>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
