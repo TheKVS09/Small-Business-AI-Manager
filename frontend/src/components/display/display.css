@@ -1,0 +1,178 @@
+.ai-report-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #1e293b;
+  width: 100%;
+}
+
+.ai-report-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+.ai-report-paragraph {
+  margin: 0 0 8px 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.ai-summary-block h3,
+.ai-bullet-block h3,
+.ai-table-block h3,
+.ai-chart-block h3 {
+  margin: 12px 0 8px 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+/* Summary Cards */
+.ai-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.ai-summary-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-summary-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.ai-summary-value {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Bullet Lists */
+.ai-bullet-block ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.ai-bullet-block li {
+  font-size: 0.9rem;
+  color: #334155;
+  margin-bottom: 4px;
+}
+
+/* Tables */
+.ai-table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+
+.ai-table-block table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+.ai-table-block th {
+  background-color: #f1f5f9;
+  color: #475569;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.ai-table-block td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+/* Charts */
+.ai-chart-wrapper {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 12px 8px 4px 8px;
+}
+/* Metric Change Indicators */
+.ai-summary-change {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 4px;
+  display: flex;
+  gap: 4px;
+}
+
+.ai-summary-change.positive {
+  color: #10b981;
+}
+
+.ai-summary-change.negative {
+  color: #ef4444;
+}
+
+.change-label {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+/* Callouts (Insights & Recommendations) */
+.ai-callout-block {
+  padding: 16px;
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.ai-callout-block h4 {
+  margin: 0 0 6px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.ai-callout-block p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #334155;
+}
+
+/* Insight styling (Blue accent) */
+.ai-callout-block.insight {
+  background-color: #f0f9ff;
+  border-left-color: #0284c7;
+}
+.ai-callout-block.insight h4 {
+  color: #0369a1;
+}
+
+/* Recommendation styling (Indigo accent) */
+.ai-callout-block.recommendation {
+  background-color: #f5f3ff;
+  border-left-color: #6366f1;
+}
+.ai-callout-block.recommendation h4 {
+  color: #4f46e5;
+}
+/* Warning Callout Styling (Red/Amber Accent) */
+.ai-callout-block.warning {
+  background-color: #fef2f2;
+  border-left-color: #ef4444;
+}
+
+.ai-callout-block.warning h4 {
+  color: #dc2626;
+}

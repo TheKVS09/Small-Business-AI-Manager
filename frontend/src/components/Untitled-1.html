@@ -1,0 +1,341 @@
+
+import React from "react";
+import "./order.css";
+
+function Orders() {
+    return (
+        <div className="orders-page">
+
+            {/* Header */}
+            <div className="orders-header">
+                <div>
+                    <h2>Orders</h2>
+                    <p>Manage and track all customer orders</p>
+                </div>
+
+                <button className="add-order-btn">
+                    + New Order
+                </button>
+            </div>
+
+
+            {/* Statistics */}
+            <div className="orders-stats">
+
+                <div className="order-stat-card">
+                    <div className="order-stat-icon">📋</div>
+                    <div>
+                        <p>Total Orders</p>
+                        <h3>1,248</h3>
+                        <span className="order-positive">↑ 8.2% this month</span>
+                    </div>
+                </div>
+
+                <div className="order-stat-card">
+                    <div className="order-stat-icon">⏳</div>
+                    <div>
+                        <p>Pending</p>
+                        <h3>42</h3>
+                        <span className="order-warning">Needs attention</span>
+                    </div>
+                </div>
+
+                <div className="order-stat-card">
+                    <div className="order-stat-icon">✓</div>
+                    <div>
+                        <p>Completed</p>
+                        <h3>1,176</h3>
+                        <span className="order-positive">94.2% completion</span>
+                    </div>
+                </div>
+
+                <div className="order-stat-card">
+                    <div className="order-stat-icon">₹</div>
+                    <div>
+                        <p>Order Revenue</p>
+                        <h3>₹85,420</h3>
+                        <span className="order-positive">↑ 12.5%</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            {/* Orders Table Card */}
+            <div className="orders-card">
+
+                <div className="orders-card-header">
+
+                    <div>
+                        <h3>All Orders</h3>
+                        <p>View and manage customer orders</p>
+                    </div>
+
+                    <div className="orders-filters">
+
+                        <input
+                            type="text"
+                            placeholder="Search orders..."
+                        />
+
+                        <select>
+                            <option>All Status</option>
+                            <option>Pending</option>
+                            <option>Processing</option>
+                            <option>Completed</option>
+                            <option>Cancelled</option>
+                        </select>
+
+                        <select>
+                            <option>All Dates</option>
+                            <option>Today</option>
+                            <option>This Week</option>
+                            <option>This Month</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                {/* Table */}
+                <div className="orders-table-container">
+
+                    <table className="orders-table">
+
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Date</th>
+                                <th>Customer</th>
+                                <th>Items</th>
+                                <th>Total</th>
+                                <th>Payment</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>#ORD-1024</strong>
+                                </td>
+
+                                <td>25 Aug 2026</td>
+
+                                <td>
+                                    <div className="customer">
+                                        <div className="customer-avatar">R</div>
+                                        <span>Rahul Kumar</span>
+                                    </div>
+                                </td>
+
+                                <td>2 items</td>
+
+                                <td>₹2,598</td>
+
+                                <td>
+                                    <span className="payment-paid">
+                                        Paid
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span className="order-status completed">
+                                        Completed
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button className="action-btn">
+                                        View
+                                    </button>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>#ORD-1023</strong>
+                                </td>
+
+                                <td>25 Aug 2026</td>
+
+                                <td>
+                                    <div className="customer">
+                                        <div className="customer-avatar">P</div>
+                                        <span>Priya Singh</span>
+                                    </div>
+                                </td>
+
+                                <td>1 item</td>
+
+                                <td>₹3,499</td>
+
+                                <td>
+                                    <span className="payment-paid">
+                                        Paid
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span className="order-status processing">
+                                        Processing
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button className="action-btn">
+                                        View
+                                    </button>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>#ORD-1022</strong>
+                                </td>
+
+                                <td>24 Aug 2026</td>
+
+                                <td>
+                                    <div className="customer">
+                                        <div className="customer-avatar">A</div>
+                                        <span>Amit Das</span>
+                                    </div>
+                                </td>
+
+                                <td>1 item</td>
+
+                                <td>₹2,199</td>
+
+                                <td>
+                                    <span className="payment-pending">
+                                        Pending
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span className="order-status pending">
+                                        Pending
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button className="action-btn">
+                                        View
+                                    </button>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>#ORD-1021</strong>
+                                </td>
+
+                                <td>24 Aug 2026</td>
+
+                                <td>
+                                    <div className="customer">
+                                        <div className="customer-avatar">N</div>
+                                        <span>Neha Sharma</span>
+                                    </div>
+                                </td>
+
+                                <td>3 items</td>
+
+                                <td>₹2,397</td>
+
+                                <td>
+                                    <span className="payment-paid">
+                                        Paid
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span className="order-status completed">
+                                        Completed
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button className="action-btn">
+                                        View
+                                    </button>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>
+                                    <strong>#ORD-1020</strong>
+                                </td>
+
+                                <td>23 Aug 2026</td>
+
+                                <td>
+                                    <div className="customer">
+                                        <div className="customer-avatar">V</div>
+                                        <span>Vikash Kumar</span>
+                                    </div>
+                                </td>
+
+                                <td>1 item</td>
+
+                                <td>₹1,299</td>
+
+                                <td>
+                                    <span className="payment-refunded">
+                                        Refunded
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span className="order-status cancelled">
+                                        Cancelled
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button className="action-btn">
+                                        View
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                {/* Pagination */}
+                <div className="orders-pagination">
+
+                    <span>
+                        Showing 1–5 of 1,248 orders
+                    </span>
+
+                    <div className="pagination-buttons">
+                        <button disabled>‹</button>
+                        <button className="page-active">1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                        <button>5</button>
+                        <button>›</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    );
+}
+
+export default Orders;

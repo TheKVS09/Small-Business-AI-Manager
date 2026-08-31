@@ -1,0 +1,165 @@
+.settings-page {
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.settings-header {
+    margin-bottom: 25px;
+}
+
+.settings-header h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.settings-header p {
+    margin-top: 6px;
+    color: #777;
+}
+
+
+.settings-card {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+
+.settings-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.settings-card-header h3 {
+    margin: 0;
+}
+
+.settings-card-header p {
+    margin: 5px 0 0;
+    color: #777;
+}
+
+
+.settings-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f3f5;
+    font-size: 20px;
+}
+
+
+.setting-field {
+    margin-bottom: 20px;
+}
+
+.setting-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.setting-field input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.setting-field input:focus {
+    border-color: #555;
+}
+
+.setting-field small {
+    display: block;
+    margin-top: 6px;
+    color: #888;
+}
+
+
+.generate-session-btn {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.generate-session-btn:hover {
+    background: #f5f5f5;
+}
+
+
+.settings-actions {
+    display: flex;
+    gap: 10px;
+}
+
+
+.save-settings-btn {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 7px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.save-settings-btn:hover {
+    opacity: 0.85;
+}
+
+
+.clear-settings-btn {
+    padding: 11px 18px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    background: white;
+    cursor: pointer;
+}
+
+
+.settings-success {
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 7px;
+    background: #eaf8ee;
+    color: #237a3b;
+}
+
+
+.config-status {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.config-status div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px;
+    background: #f7f7f7;
+    border-radius: 8px;
+}
+
+.config-status span {
+    color: #777;
+}
+
+.config-status strong {
+    word-break: break-all;
+    text-align: right;
+}
